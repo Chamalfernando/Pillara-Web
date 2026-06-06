@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pillara - The AI-powered medicine reminder app designed for ultimate accessibility. Scan prescriptions, chat with your AI health assistant, and stay on track.">
+    <title>Pillara | Never Miss a Pill, Worry Less</title>
+    <!-- Google Fonts: Nunito Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800;6..12,900&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="navbar">
+        <div class="container header-container">
+            <a href="#" class="logo-area">
+                <svg width="40" height="40" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="512" height="512" rx="128" fill="#F4FAFD"/>
+                    <!-- Emerald capsule logo -->
+                    <rect x="196" y="120" width="120" height="272" rx="60" transform="rotate(-45 196 120)" fill="#3BAF7E"/>
+                    <rect x="292.13" y="216.13" width="120" height="136" rx="0" transform="rotate(-45 292.13 216.13)" fill="#88F8C1"/>
+                    <!-- Inner pill details -->
+                    <circle cx="216" cy="216" r="16" fill="#FFFFFF" opacity="0.8"/>
+                    <circle cx="296" cy="296" r="16" fill="#FFFFFF" opacity="0.8"/>
+                </svg>
+                <span class="logo-text">Pillara</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#simulator">Interactive Demo</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#testimonials">Testimonials</a>
+            </nav>
+            <div class="header-cta">
+                <a href="#download" class="btn btn-primary" id="nav-cta-download">Download App</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-text-content">
+                    <span class="badge badge-success-light">Now with AI Prescription Scan</span>
+                    <h1 class="hero-title">Never Miss a Pill.<br><span class="highlight">Worry Less.</span></h1>
+                    <p class="hero-subtitle">
+                        Pillara is the warm, smart, and ultra-accessible medicine companion app that makes tracking medication effortless for you, your elderly parents, and your entire family.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#download" class="btn btn-primary btn-lg" id="hero-btn-get-started">Get Started Free</a>
+                        <a href="#simulator" class="btn btn-secondary btn-lg" id="hero-btn-demo">Try Interactive Demo</a>
+                    </div>
+                    <div class="hero-badges">
+                        <a href="#" class="store-badge apple-badge">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-.96.04-2.13.64-2.82 1.45-.6.69-1.13 1.83-1.01 2.94.97.08 2.08-.52 2.84-1.33z"/>
+                            </svg>
+                            <div>
+                                <span class="badge-sub">Download on the</span>
+                                <span class="badge-main">App Store</span>
+                            </div>
+                        </a>
+                        <a href="#" class="store-badge play-badge">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3.609 1.814L13.783 12 3.609 22.186A2.245 2.245 0 0 1 3 20.612V3.388A2.245 2.245 0 0 1 3.609 1.814z M14.962 10.821l3.707-3.707a1 1 0 0 1 1.414 0l1.768 1.768a1 1 0 0 1 0 1.414l-3.707 3.707L14.962 10.821z M4.964 1.056L16.291 7.6l-3.896 3.896L4.964 1.056z M12.395 12.504l3.896 3.896L4.964 22.944l7.431-10.44z"/>
+                            </svg>
+                            <div>
+                                <span class="badge-sub">Get it on</span>
+                                <span class="badge-main">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        </div>
+                        <p class="trust-text">Loved by 10,000+ patients & caregivers worldwide</p>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="floating-phone-frame">
+                        <div class="phone-camera"></div>
+                        <div class="phone-screen">
+                            <!-- Mobile Dashboard Mockup -->
+                            <div class="mock-app-header">
+                                <div class="mock-user-info">
+                                    <div class="mock-avatar">👴</div>
+                                    <div>
+                                        <div class="mock-greeting">Good Morning,</div>
+                                        <div class="mock-name">Father (Appu)</div>
+                                    </div>
+                                </div>
+                                <div class="mock-date">Sat, Jun 6</div>
+                            </div>
+                            <div class="mock-progress-card">
+                                <div class="progress-info">
+                                    <h3>Today's Progress</h3>
+                                    <p class="progress-stats"><span id="hero-taken-count">2</span> of 3 completed</p>
+                                </div>
+                                <div class="progress-ring-container">
+                                    <svg class="progress-ring" width="60" height="60">
+                                        <circle class="progress-ring-bg" stroke="#e8eff1" stroke-width="6" fill="transparent" r="24" cx="30" cy="30" />
+                                        <circle class="progress-ring-indicator" stroke="#3BAF7E" stroke-dasharray="150" stroke-dashoffset="50" stroke-width="6" fill="transparent" r="24" cx="30" cy="30" />
+                                    </svg>
+                                    <div class="progress-percentage">66%</div>
+                                </div>
+                            </div>
+                            <div class="mock-section-title">Morning Doses</div>
+                            <div class="mock-med-list">
+                                <div class="mock-med-card taken">
+                                    <div class="med-status-line success"></div>
+                                    <div class="med-icon">💊</div>
+                                    <div class="med-details">
+                                        <h4>Metformin 500mg</h4>
+                                        <p>1 Pill • With Breakfast</p>
+                                    </div>
+                                    <div class="med-action-badge success">Taken</div>
+                                </div>
+                                <div class="mock-med-card taken">
+                                    <div class="med-status-line success"></div>
+                                    <div class="med-icon">🥛</div>
+                                    <div class="med-details">
+                                        <h4>Calcium D3</h4>
+                                        <p>1 Capsule • After food</p>
+                                    </div>
+                                    <div class="med-action-badge success">Taken</div>
+                                </div>
+                                <div class="mock-med-card pending pulse-card">
+                                    <div class="med-status-line warning"></div>
+                                    <div class="med-icon">❤️</div>
+                                    <div class="med-details">
+                                        <h4>Atorvastatin 20mg</h4>
+                                        <p>1 Pill • At 10:00 AM</p>
+                                    </div>
+                                    <div class="med-action-btn">Take</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Grid Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge-accent-light">App Capabilities</span>
+                    <h2>Designed for Health, Accessibility, and Peace of Mind</h2>
+                    <p class="section-intro">Pillara replaces clinical complexity with warm, encouraging, and easy-to-use helpers.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card" id="feature-scanner">
+                        <div class="feature-icon-wrapper scanner-bg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3BAF7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 7V5a2 2 0 0 1 2-2h2"/>
+                                <path d="M17 3h2a2 2 0 0 1 2 2v2"/>
+                                <path d="M21 17v2a2 2 0 0 1-2 2h-2"/>
+                                <path d="M7 21H5a2 2 0 0 1-2-2v-2"/>
+                                <line x1="7" y1="12" x2="17" y2="12"/>
+                            </svg>
+                        </div>
+                        <h3>AI Prescription Scanner</h3>
+                        <p>No tedious typing. Simply take a photo of your doctor's handwritten prescription. Our advanced medical AI automatically reads the dosage, timings, and schedules for you.</p>
+                    </div>
+
+                    <div class="feature-card" id="feature-reminders">
+                        <div class="feature-icon-wrapper reminders-bg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e0a05a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                            </svg>
+                        </div>
+                        <h3>Smart, Gentle Reminders</h3>
+                        <p>Never get startled by clinical alarms. Pillara uses warm soundscapes and customizable verbal alerts that feel like a friendly tap on the shoulder. Support for snooze & flexible timings.</p>
+                    </div>
+
+                    <div class="feature-card" id="feature-assistant">
+                        <div class="feature-icon-wrapper assistant-bg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A90E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <h3>AI Health Assistant</h3>
+                        <p>Ask anything about your pills. "Can I take this with milk?" "What side effects should I watch for?" Get immediate, evidence-based, easy-to-understand responses verified by health databases.</p>
+                    </div>
+
+                    <div class="feature-card" id="feature-caregiver">
+                        <div class="feature-icon-wrapper caregiver-bg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8e4f0e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Caregiver Sync</h3>
+                        <p>Have peace of mind from afar. Receive real-time alerts when your elderly parents take their medications, or get notified automatically if they happen to miss a critical dose.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Simulator Widget Section -->
+        <section class="simulator-section" id="simulator">
+            <div class="container simulator-container">
+                <div class="simulator-intro">
+                    <span class="badge badge-primary-light">Live App Simulator</span>
+                    <h2>Try Pillara Yourself</h2>
+                    <p class="section-subtitle">Interact with our live preview widget below. Switch between the AI Health Assistant chat and the medication tracker to experience our design system first-hand.</p>
+                    
+                    <div class="interactive-controls">
+                        <button class="tab-toggle active" data-tab="chat">💬 Ask AI Assistant</button>
+                        <button class="tab-toggle" data-tab="tracker">📅 Track Morning Dose</button>
+                    </div>
+
+                    <!-- Side notes matching the active tab -->
+                    <div class="simulator-notes-container">
+                        <div class="simulator-note active" id="note-chat">
+                            <h4>Ask anything, worry less</h4>
+                            <p>Select a quick question below or type your own question to see how Pillara's AI Assistant breaks down complex medical jargon into warm, friendly, bite-sized advice.</p>
+                            <div class="chat-suggestions">
+                                <button class="suggestion-chip">Can I take Atorvastatin with grapefruit?</button>
+                                <button class="suggestion-chip">How do I take Metformin safely?</button>
+                                <button class="suggestion-chip">Why is it important to finish my antibiotic course?</button>
+                            </div>
+                        </div>
+                        <div class="simulator-note" id="note-tracker">
+                            <h4>Accessible check-offs for seniors</h4>
+                            <p>We designed the tracker with huge touch targets, high-contrast statuses, and a tactile feel. Complete the checklist items on the screen to watch the progress ring fill up.</p>
+                            <button class="btn btn-secondary" id="btn-reset-tracker">Reset Tracker Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live phone simulator frame -->
+                <div class="simulator-visual">
+                    <div class="phone-frame">
+                        <div class="phone-camera"></div>
+                        <div class="phone-screen-container">
+                            
+                            <!-- SCREEN 1: AI Chat Assistant (Default) -->
+                            <div class="app-screen active" id="screen-chat">
+                                <div class="app-bar">
+                                    <div class="app-bar-avatar">🤖</div>
+                                    <div class="app-bar-info">
+                                        <h4>AI Health Companion</h4>
+                                        <p class="status-indicator">● Online & Helpful</p>
+                                    </div>
+                                </div>
+                                <div class="chat-messages" id="chat-messages-container">
+                                    <div class="message incoming">
+                                        Hello! I'm your Pillara AI Assistant. You can ask me any question about your prescribed medicines, side effects, or nutritional guidelines!
+                                    </div>
+                                    <div class="message incoming">
+                                        How can I help you today?
+                                    </div>
+                                </div>
+                                <div class="chat-input-area">
+                                    <input type="text" id="chat-input-field" placeholder="Ask about your medicine..." autocomplete="off">
+                                    <button id="chat-send-btn">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="22" y1="2" x2="11" y2="13"/>
+                                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- SCREEN 2: Pill Tracker -->
+                            <div class="app-screen" id="screen-tracker">
+                                <div class="app-bar">
+                                    <div class="app-bar-avatar">📅</div>
+                                    <div class="app-bar-info">
+                                        <h4>My Daily Tracker</h4>
+                                        <p class="status-indicator">Today's medication schedule</p>
+                                    </div>
+                                </div>
+                                <div class="tracker-dashboard">
+                                    <div class="tracker-stats-row">
+                                        <div class="tracker-stats-text">
+                                            <h5>Daily Completion</h5>
+                                            <p id="tracker-fraction">0 of 3 taken</p>
+                                        </div>
+                                        <div class="tracker-ring-wrapper">
+                                            <svg width="50" height="50">
+                                                <circle stroke="#e8eff1" stroke-width="4.5" fill="transparent" r="18" cx="25" cy="25" />
+                                                <circle id="tracker-progress-circle" stroke="#3BAF7E" stroke-dasharray="113" stroke-dashoffset="113" stroke-width="4.5" fill="transparent" r="18" cx="25" cy="25" />
+                                            </svg>
+                                            <div class="tracker-percentage" id="tracker-percent-text">0%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tracker-med-list" id="tracker-med-items-container">
+                                    <div class="tracker-item" data-index="0">
+                                        <div class="med-status-line gray"></div>
+                                        <div class="tracker-item-icon">💊</div>
+                                        <div class="tracker-item-info">
+                                            <h4>Metformin 500mg</h4>
+                                            <p>Breakfast • 1 Pill</p>
+                                        </div>
+                                        <button class="tracker-check-btn">Take</button>
+                                    </div>
+                                    <div class="tracker-item" data-index="1">
+                                        <div class="med-status-line gray"></div>
+                                        <div class="tracker-item-icon">🥛</div>
+                                        <div class="tracker-item-info">
+                                            <h4>Calcium D3</h4>
+                                            <p>After Lunch • 1 Capsule</p>
+                                        </div>
+                                        <button class="tracker-check-btn">Take</button>
+                                    </div>
+                                    <div class="tracker-item" data-index="2">
+                                        <div class="med-status-line gray"></div>
+                                        <div class="tracker-item-icon">❤️</div>
+                                        <div class="tracker-item-info">
+                                            <h4>Atorvastatin 20mg</h4>
+                                            <p>Bedtime • 1 Pill</p>
+                                        </div>
+                                        <button class="tracker-check-btn">Take</button>
+                                    </div>
+                                </div>
+                                <div class="congratulations-banner" id="congrats-banner">
+                                    🌟 All doses completed! Stay healthy!
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-works-section" id="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge-success-light">Seamless Setup</span>
+                    <h2>Setup in Under 2 Minutes</h2>
+                    <p class="section-intro">Transitioning into a healthy daily routine is incredibly simple.</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Scan Prescription</h3>
+                        <p>Use your camera to snap a photo of the doctor's note or manually search our comprehensive catalog of medications.</p>
+                    </div>
+                    <div class="step-arrow">➔</div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Confirm Schedules</h3>
+                        <p>The AI suggests appropriate time gaps, instructions (before/after food), and details. You review and click confirm.</p>
+                    </div>
+                    <div class="step-arrow">➔</div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Receive Friendly Alerts</h3>
+                        <p>Relax while Pillara reminds you when it's time, keeps your logs clean, and syncs status with your chosen caregivers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge-accent-light">Real Reviews</span>
+                    <h2>What Caregivers & Patients Say</h2>
+                    <p class="section-intro">Pillara is designed to bring relief to seniors and confidence to their families.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"My 76-year-old father always struggled with small buttons on reminder apps. Pillara's huge screens and simple check-offs changed everything. The caregiver alerts let me breathe easy knowing he got his pressure pills."</p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar">👩‍⚕️</div>
+                            <div>
+                                <h4 class="user-name">Dilini R.</h4>
+                                <p class="user-role">Daughter & Primary Caregiver</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"I scanned my complex postoperative prescription list in seconds. The AI companion explained what food interactions to avoid in simple language. It's like having a friendly pharmacist in my pocket."</p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar">👨‍⚕️</div>
+                            <div>
+                                <h4 class="user-name">Aruni S.</h4>
+                                <p class="user-role">Recovering Patient</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Download Section -->
+        <section class="download-section" id="download">
+            <div class="container download-container">
+                <div class="download-content">
+                    <h2>Ready to Take Control of Your Health?</h2>
+                    <p>Get started with Pillara today. It's completely free to scan and track your first 3 medications.</p>
+                    <div class="store-buttons">
+                        <!-- Custom designed HTML App Store and Play Store badges for premium feel -->
+                        <a href="#" class="store-badge apple-badge">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-.96.04-2.13.64-2.82 1.45-.6.69-1.13 1.83-1.01 2.94.97.08 2.08-.52 2.84-1.33z"/>
+                            </svg>
+                            <div>
+                                <span class="badge-sub">Download on the</span>
+                                <span class="badge-main">App Store</span>
+                            </div>
+                        </a>
+                        <a href="#" class="store-badge play-badge">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3.609 1.814L13.783 12 3.609 22.186A2.245 2.245 0 0 1 3 20.612V3.388A2.245 2.245 0 0 1 3.609 1.814z M14.962 10.821l3.707-3.707a1 1 0 0 1 1.414 0l1.768 1.768a1 1 0 0 1 0 1.414l-3.707 3.707L14.962 10.821z M4.964 1.056L16.291 7.6l-3.896 3.896L4.964 1.056z M12.395 12.504l3.896 3.896L4.964 22.944l7.431-10.44z"/>
+                            </svg>
+                            <div>
+                                <span class="badge-sub">Get it on</span>
+                                <span class="badge-main">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="newsletter-card">
+                    <h4>Stay Updated</h4>
+                    <p>Get tips on healthy living, medical assistant safety updates, and Pillara news.</p>
+                    <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo-area">
+                    <svg width="30" height="30" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="512" height="512" rx="128" fill="#F4FAFD"/>
+                        <rect x="196" y="120" width="120" height="272" rx="60" transform="rotate(-45 196 120)" fill="#3BAF7E"/>
+                        <rect x="292.13" y="216.13" width="120" height="136" rx="0" transform="rotate(-45 292.13 216.13)" fill="#88F8C1"/>
+                    </svg>
+                    <span class="logo-text">Pillara</span>
+                </a>
+                <p>Supporting healthy routines with AI-driven clarity and accessible interfaces.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Product</h4>
+                <a href="#features">Features</a>
+                <a href="#simulator">App Demo</a>
+                <a href="#how-it-works">How it Works</a>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Medical Disclaimer</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Pillara Inc. All rights reserved. Pillara is an assistive tracking tool and not a substitute for professional medical advice.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="index.js"></script>
+</body>
+</html>
